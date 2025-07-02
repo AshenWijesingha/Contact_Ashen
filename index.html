@@ -1026,6 +1026,11 @@ END:VCARD`;
                     navigator.vibrate([100, 50, 100]);
                 }
 
+                // Redirect to the specified webpage after a short delay
+                setTimeout(() => {
+                    window.location.href = 'https://www.eguardian.com/';
+                }, 1500); // 1.5 second delay to allow download to complete
+
             } catch (error) {
                 console.error('Error saving contact:', error);
                 alert('Error saving contact. Please try again.');
